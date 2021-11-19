@@ -4,7 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <img class="main-logo" src="images/logo.svg" alt="main-logo" />
+    <!-- white card -main- -->
+    <div class="main-container">
+      <!-- left card -->
+      <div class="card-1">
+        <div class="bill-item">
+          <label class="bill-label" for="bill-input">Bill</label>
+          <label class="dollar-icon">
+            <input class="bill-input" type="text" name="bill-input" />
+          </label>
+        </div>
+        <!-- Select tip -->
+        <div class="bill-item">
+          <p class="bill-label">Select Tip %</p>
+          <!-- tip buttons -->
+          <div class="tip-buttons">
+            <button class="btn-tip">5%</button>
+            <button class="btn-tip">10%</button>
+            <button class="btn-tip">15%</button>
+            <button class="btn-tip">25%</button>
+            <button class="btn-tip">50%</button>
+            <input class="btn-tip" id="tip-input" type="text" />
+          </div>
+        </div>
+
+        <div class="bill-item">
+          <label class="bill-label" for="bill-input">Number of people</label>
+          <label class="person-icon">
+            <input class="bill-input" type="text" name="bill-input" />
+          </label>
+        </div>
+      </div>
+      <!-- right card -->
+      <div class="card-2"><p>Tip Amount</p></div>
+    </div>
+  </body>
 </html>
